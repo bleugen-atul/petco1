@@ -46,6 +46,7 @@ class Petcoscrape1Spider(scrapy.Spider):
             yield scrapy.Request(url=url1, callback=self.storetiming, meta=items)
 
     def storetiming(self, response):
+        # function to get storetiming
         items = response.meta
         # r = requests.get(url1)
         # html_response1 = html.fromstring(r.content)
